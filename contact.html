@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Egyptian Football Fans Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <h1>Egyptian Football Fans Opinion Poll</h1>
+    </header>
+
+    <main>
+        <section>
+            <p>Share your thoughts and let us know your perspective on Egyptian football clubs (Al Ahly, Zamalek,
+                Ismaily).</p>
+
+            <form action="#" method="POST">
+                <!-- Text -->
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required><br><br>
+
+                <!-- Email -->
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <!-- Number -->
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" min="10" max="100"><br><br>
+
+                <!-- Date -->
+                <label for="join_date">Date you started supporting your team:</label><br>
+                <input type="date" id="join_date" name="join_date"><br><br>
+
+                <!-- Radio buttons -->
+                <label>Favorite Club:</label><br>
+                <input type="radio" id="ahly" name="team" value="Ahly">
+                <label for="ahly">Al Ahly SC</label><br>
+                <input type="radio" id="zamalek" name="team" value="Zamalek">
+                <label for="zamalek">Zamalek SC</label><br>
+                <input type="radio" id="ismaily" name="team" value="Ismaily">
+                <label for="ismaily">Ismaily SC</label><br><br>
+
+                <!-- Checkboxes -->
+                <label>Tournaments you follow:</label><br>
+                <input type="checkbox" id="caf" name="tournaments" value="CAF">
+                <label for="caf">CAF Champions League</label><br>
+                <input type="checkbox" id="league" name="tournaments" value="League">
+                <label for="league">Egyptian Premier League</label><br><br>
+
+                <!-- Dropdown menu (Select) -->
+                <label for="city">City / Governorate:</label><br>
+                <select id="city" name="city">
+                    <option value="cairo">Cairo</option>
+                    <option value="giza">Giza</option>
+                    <option value="ismailia">Ismailia</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+
+                <!-- Large text box (Textarea) -->
+                <label for="message">Your Message or Team Analysis:</label><br>
+                <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+
+                <button type="submit">Submit Survey</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>All Rights Reserved &copy; 2026</p>
+    </footer>
+</body>
+
+</html>
